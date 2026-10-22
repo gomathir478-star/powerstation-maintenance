@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GridGuardian Pro | PSMS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">ϟ</div><div><strong>GridGuardian</strong><small>POWER STATION OS</small></div></div>
+    <div class="side-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-view="dashboard"><span>◫</span> Overview</button>
+      <button class="nav-item" data-view="equipment"><span>▦</span> Equipment</button>
+      <button class="nav-item" data-view="alarms"><span>⚠</span> Alarm Monitor <i id="alarmBadge">0</i></button>
+      <button class="nav-item" data-view="schedules"><span>◷</span> Maintenance Plan</button>
+      <button class="nav-item" data-view="repairs"><span>⌁</span> Repair Work Orders</button>
+      <button class="nav-item" data-view="inventory"><span>▤</span> Spare Parts</button>
+      <button class="nav-item" data-view="history"><span>↺</span> Maintenance History</button>
+      <button class="nav-item" data-view="reports"><span>▥</span> Reports & Analytics</button>
+      <button class="nav-item" data-view="users"><span>♙</span> User Management</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="online-dot"></div><div><b>Plant systems online</b><small>Local development mode</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow">POWER STATION / OPERATIONS</div><h1 id="pageTitle">Operations Overview</h1></div><div class="top-actions"><span class="live-pill"><span></span> SYSTEM LIVE</span><div class="avatar">AD</div><div><b>Administrator</b><small>System Admin</small></div></div></header>
+    <div id="notice" class="notice hidden"></div>
+    <section id="view" class="view"></section>
+    <footer>GRIDGUARDIAN PRO <span>•</span> POWER STATION MAINTENANCE SYSTEM <span class="footer-right">Student project prototype</span></footer>
+  </main>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Add record</h2><button id="closeModal" class="icon-btn">×</button></div><form id="modalForm"><div id="modalFields" class="form-grid"></div><div class="modal-actions"><button type="button" class="btn secondary" id="cancelModal">Cancel</button><button class="btn primary" type="submit">Save record <span>→</span></button></div></form></div></div>
+<script src="app.js"></script>
+</body>
+</html>
